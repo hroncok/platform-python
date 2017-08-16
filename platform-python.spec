@@ -94,7 +94,7 @@
 Summary: A Python interpreter for basic system tools
 Name: platform-python
 Version: %{pybasever}.2
-Release: 10%{?dist}
+Release: 11%{?dist}
 License: Python
 
 
@@ -1234,6 +1234,9 @@ CheckPython optimized
 # ======================================================
 
 %changelog
+* Wed Aug 16 2017 Petr Viktorin <pviktori@redhat.com> - 3.6.2-11
+- Correct shebang of a config script
+
 * Mon Aug 14 2017 Petr Viktorin <pviktori@redhat.com> - 3.6.2-10
 - Remove bundled setuptools, pip, ensurepip
 - Have /usr/libexec symlink point from generic to specific version binaries
