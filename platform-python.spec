@@ -94,7 +94,7 @@
 Summary: A Python interpreter for basic system tools
 Name: platform-python
 Version: %{pybasever}.2
-Release: 12%{?dist}
+Release: 13%{?dist}
 License: Python
 
 
@@ -947,9 +947,6 @@ CheckPython optimized
 
 %postun libs -p /sbin/ldconfig
 
-# ======================================================
-# Files
-# ======================================================
 
 %files
 %license LICENSE
@@ -1235,6 +1232,9 @@ CheckPython optimized
 # ======================================================
 
 %changelog
+* Tue Nov 21 2017 Miro Hrončok <mhroncok@redhat.com> - 3.6.2-13
+- Remove comment after a script which caused the script to be broken (#1515357)
+
 * Thu Aug 17 2017 Tomas Orsava <torsava@redhat.com> - 3.6.2.-12
 - Skip test_float until the F27 branching is sorted out
 
